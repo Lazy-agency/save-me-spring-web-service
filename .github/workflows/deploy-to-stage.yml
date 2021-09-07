@@ -3,7 +3,7 @@ name: Deploy to Stage
 on:
   push:
     branches:
-      - space-io-save-me-stage 
+      - release
 
 jobs:
   build:
@@ -15,4 +15,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "space-io-spring-rest-dev"
           heroku_email: "jurica1.migac@gmail.com"
-          branch: "space-io-save-me-stage"
+          branch: "release"
